@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Restaurant Site</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="css/styles.css">
+     <link href="bootstrap4-glyphicons/css/bootstrap-glyphicons.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora">
+  </head>
+
+  <body>
+  	<header>
+  		<nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+  			<div class="container">                                     <!--  a container to hold all header elements -->
+
+  			                               <!-- bootstrap documentation will tell that any header should go under this navber header -->
+  				    <a href="index.html" class="float-left d-none d-sm-block">                       <!-- //this will be a clickable region// and class will make float left with the help of bootstrap and this will apply when the screen is medium or large-->
+  						<div id="logo-img" alt="Logo img"></div>             <!-- image -->
+  					</a>
+
+  				    <div class="navbar-brand">
+  					   <a href="index.html"><h1>Haldiram's</h1></a>        <!-- It is already floated left because of navbar brand wrapper-->
+
+                       <p>
+                    	 <img src="images/Blue_star (1).jpg" alt="Certified">
+                    	 <span>Its certified</span>
+                       </p>
+  				    </div>
+  				
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">    <!-- navbar-toggle is controlling positioning of button; collapsed is a bootstrap plugin that tells this button is in collapsed state, if somebody clicks on it the collapsed state is gone; next 2 data are html5 api attributes that allow javascript plugins; aria is for screen readers-->
+                    	<span class="sr-only">Toggle navigation</span>     <!--screen readers-->
+                    	<span class="navbar-toggler-icon"></span> <!-- putting icons in the buttons-->
+                    </button>	
+  				
+
+  				<div id="collapsable-nav" class="collapse navbar-collapse">   <!-- collapse.js api will collapse the button after seeing the id; this is the container div for menu items-->
+  					<ul id="nav-list" class="navbar-nav ml-auto">     <!--nav and navbar-nav are going to be a component of our navigation; navbar-right is float right -->
+              <li class="d-sm-none">
+                  <a href="index.html">
+                    <span class="glyphicon glyphicon-home"></span>Home
+                  </a>
+              </li>   
+  						<li class="active">   <!-- to make an indication of menu page -->
+  							<a href="menu-categories.html">   <!--It will point to some page-->
+  								<span class="glyphicon glyphicon-cutlery"></span>   <!--these two classes are able to bring icon font-->
+  								<br class="d-none d-sm-block">  <!--br is used so that menu comes under the icon-->Menu
+  							</a>
+  						</li>
+  						<li>
+  							<a href="#">
+  								<span class="glyphicon glyphicon-info-sign"></span><br class="d-none d-sm-block">About
+  							</a>
+  						</li>
+  						<li>
+  							<a href="#">
+  								<span class="glyphicon glyphicon-certificate"></span><br class="d-none d-sm-block">Awards
+  							</a>
+  						</li>
+  						<li id="phone" class="d-none d-sm-block">
+  							<a href="tel:410-602-5008"> <!-- If somebody clicks it , it will try to call that number -->
+  								<span>410-602-5008</span>
+  							</a>
+  							<div>* We Deliver</div>
+  						</li>
+  					</ul>
+  				</div>
+
+  			</div>
+  		</nav>
+  	</header>
+
+  	<div class="d-grid gap-2 d-sm-none text-center">  <!--phone button-->
+        <button class="btn btn-primary" type="button">
+           <a href="tel:410-602-5008" class="btn">
+  			  <span class="glyphicon glyphicon-earphone"></span>
+  			  410-602-5008
+  		   </a>
+  	    </button>
+
+  	    <div id="xs-deliver">We deliver</div>
+    </div>
+
+  	<div id="main-content" class="container">
+  		<h2 id="menu-categories-title" class="text-center">
+        Lunch Menu
+      </h2>
+      <div class="text-center">Lunch is not served until after 1pm.</div>
+
+      <section class="row">
+        <div class="menu-item-tile col-lg-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D01</div>
+                <img class="img-responsive" width="200" height="200" src="images\menu\menu-category\mixed veg.jpg" alt="Item">
+              </div>
+
+              <div class="menu-item-price">$<10.95 <span>(pint)</span>$14.95 <span>(quart)</span>
+              </div>
+            </div>
+
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Veal with mixed vegetables</h3>
+              <p class="menu-item-details">Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas. Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas.</p>
+            </div>
+          </div>
+          <hr class="d-lg-none">
+        </div>
+
+        <div class="menu-item-tile col-lg-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D02</div>
+                <img class="img-responsive" width="200" height="200" src="images\menu\menu-category\mixed veg.jpg" alt="Item">
+              </div>
+
+              <div class="menu-item-price">$<10.95 <span>(pint)</span>$14.95 <span>(quart)</span>
+              </div>
+            </div>
+
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Veal with mixed vegetables</h3>
+              <p class="menu-item-details">Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas</p>
+            </div>
+          </div>
+          <hr class="d-lg-none">
+        </div>
+
+        <div class="menu-item-tile col-lg-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D03</div>
+                <img class="img-responsive" width="200" height="200" src="images\menu\menu-category\mixed veg.jpg" alt="Item">
+              </div>
+
+              <div class="menu-item-price">$<10.95 <span>(pint)</span>$14.95 <span>(quart)</span>
+              </div>
+            </div>
+
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Veal with mixed vegetables</h3>
+              <p class="menu-item-details">Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas</p>
+            </div>
+          </div>
+          <hr class="d-lg-none">
+        </div>
+
+        <div class="menu-item-tile col-lg-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D04</div>
+                <img class="img-responsive" width="200" height="200" src="images\menu\menu-category\mixed veg.jpg" alt="Item">
+              </div>
+
+              <div class="menu-item-price">$<10.95 <span>(pint)</span>$14.95 <span>(quart)</span>
+              </div>
+            </div>
+
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Veal with mixed vegetables</h3>
+              <p class="menu-item-details">Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas</p>
+            </div>
+          </div>
+          <hr class="d-lg-none">
+        </div>
+
+        <div class="menu-item-tile col-lg-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D05</div>
+                <img class="img-responsive" width="200" height="200" src="images\menu\menu-category\mixed veg.jpg" alt="Item">
+              </div>
+
+              <div class="menu-item-price">$<10.95 <span>(pint)</span>$14.95 <span>(quart)</span>
+              </div>
+            </div>
+
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Veal with mixed vegetables</h3>
+              <p class="menu-item-details">Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas</p>
+            </div>
+          </div>
+          <hr class="d-lg-none">
+        </div>
+
+        <div class="menu-item-tile col-lg-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D06</div>
+                <img class="img-responsive" width="200" height="200" src="images\menu\menu-category\mixed veg.jpg" alt="Item">
+              </div>
+
+              <div class="menu-item-price">$<10.95 <span>(pint)</span>$14.95 <span>(quart)</span>
+              </div>
+            </div>
+
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">Veal with mixed vegetables</h3>
+              <p class="menu-item-details">Mixed vegetables refer to ready to use combination of cut vegetables. The vegetables may be chopped, sliced, cubed or in juliennes. The typical vegetables included in mixed vegetable are cauliflower, carrots, cabbage, French beans and peas</p>
+            </div>
+          </div>
+          <hr class="d-lg-none">
+        </div>
+
+      </section>
+
+  	</div>     <!--End of main content-->
+
+  	<footer class="panel-footer">  <!--class provides background color and padding -->
+  		<div class="container">
+  			<div class="row">
+  				<section id="hours" class="col-sm-4">
+  					<span>Hours:</span><br>
+  					Sun-Thurs: 11:15am-10:00pm<br>
+  					Fri: 11:15am-2:30pm<br>
+  					Saturday Closed
+  					<hr class="d-sm-none">
+  				</section>
+  				<section id="address" class="col-sm-4">
+  					<span>Address:</span><br>
+  					S-102, Laxmi Nagar<br>
+  				    East Delhi<br>
+  					Metro pillar no-102
+  					<p>* Delivery are within 3-4 miles, with minimum order of Rs.200 plus Rs.20 charge for all the deliveries.</p>
+  					<hr class="d-sm-none">
+  				</section>
+  				<section id="testimonials" class="col-sm-4">
+  					<p>"The best desi restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+  					<p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+  				</section>
+  			</div>
+  			<div class="text-center">&copy; Copyright Haldiram's 2021</div>
+  		</div>
+  	</footer>
+
+  	<script src="js/jquery-3.5.1.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
+  </body>
+</html>
